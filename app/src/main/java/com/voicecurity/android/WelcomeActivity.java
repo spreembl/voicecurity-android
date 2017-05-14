@@ -1,7 +1,6 @@
 package com.voicecurity.android;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -17,6 +16,11 @@ import com.rd.PageIndicatorView;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Activity, which will be opened on first app start
+ * @author Oleg Kurbatov
+ * @author Alexander Krysin
+ */
 public class WelcomeActivity extends AppCompatActivity {
 
     Button slide_button;

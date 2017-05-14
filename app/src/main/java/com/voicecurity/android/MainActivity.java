@@ -1,6 +1,5 @@
 package com.voicecurity.android;
 
-import android.app.Application;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
@@ -34,6 +33,11 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
+/**
+ * Main Activity of app
+ * @author Oleg Kurbatov
+ * @author Alexander Krysin
+ */
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,
         GoogleApiClient.OnConnectionFailedListener {
@@ -52,6 +56,7 @@ public class MainActivity extends AppCompatActivity
 
     private static final int RC_SIGN_IN = 9001;
 
+    // Ссылка на текущий объект MainActivity для использования в анонимных классах
     private static MainActivity self;
 
     @Override
@@ -70,7 +75,7 @@ public class MainActivity extends AppCompatActivity
                     .requestEmail()
                     .build();
             mGoogleApiClient = new GoogleApiClient.Builder(this)
-                    .enableAutoManage(this /* FragmentActivity */, this /* OnConnectionFailedListener */)
+                    .enableAutoManage(this, this)
                     .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                     .build();
             FirebaseUser user = mAuth.getCurrentUser();
@@ -157,7 +162,10 @@ public class MainActivity extends AppCompatActivity
                 firebaseAuthWithGoogle(account);
             } else {
                 // Google Sign In failed, update UI appropriately
-                // ...
+                Toast.makeText(MainActivity.this, "Authentication failed: "
+                                + result.getStatus().getStatus() + " - "
+                                + result.getStatus().getStatusMessage(),
+                        Toast.LENGTH_LONG).show();
             }
         }
     }
@@ -175,7 +183,7 @@ public class MainActivity extends AppCompatActivity
                         } else {
                             // If sign in fails, display a message to the user.
                             Toast.makeText(MainActivity.this, "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
+                                    Toast.LENGTH_LONG).show();
                             //updateUI(null);
                         }
                     }

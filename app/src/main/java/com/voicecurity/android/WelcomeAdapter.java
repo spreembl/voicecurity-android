@@ -9,6 +9,12 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Custom PagerAdapter for WelcomeActivity
+ * @author Oleg Kurbatov
+ * @author Alexander Krysin
+ * @see android.support.v4.view.PagerAdapter
+ */
 class WelcomeAdapter extends PagerAdapter {
 
     private List<View> viewList;

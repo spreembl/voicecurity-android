@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "955845351314",
+    "firebase_url": "https://voicecurity-167501.firebaseio.com",
+    "project_id": "voicecurity-167501",
+    "storage_bucket": "voicecurity-167501.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955845351314:android:126a575b1703be62",
+        "android_client_info": {
+          "package_name": "com.voicecurity.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955845351314-e5avb2hr12dduvsv7gt0mc0o5e9hpl5c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.voicecurity.android",
+            "certificate_hash": "444be42afaa80d28ad0df2b6a0c77452e3fe7036"
+          }
+        },
+        {
+          "client_id": "955845351314-jravnnf8e4p11mg5bci61ps7q0bb9oo5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpP8Oe2A6DqwEOVRcXpq_kuz_27ZB7nwg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955845351314-jravnnf8e4p11mg5bci61ps7q0bb9oo5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Voicecurity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="google_maps_api_key">AIzaSyBhwhx8J0X6W7tnd3Cvh3b7r5KpHrSxSh0</string>
+
+    <string name="slide_welcome">Тест</string>
+    <string name="slide_1_welcome">Быстро и надежно</string>
+    <string name="slide_2_welcome">Вам достаточно сказать кодовое слово, чтобы вызвать помощь</string>
+    <string name="slide_3_welcome">Ваши дети без труда смогут сообщить Вам о беде</string>
+    <string name="slide_4_welcome">Я пока что еще не придумал, но будет круто</string>
+
+    <string name="slide_wd">Описание дефолт</string>
+    <string name="slide_1_wd">Достаточно что-то спиздануть</string>
+    <string name="slide_2_wd">Описание 2</string>
+    <string name="slide_3_wd">Описание 3</string>
+    <string name="slide_4_wd">Описание 4</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

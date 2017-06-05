@@ -23,4 +23,23 @@
         android:text="@string/slide_welcome"
         android:textColor="@color/colorNight"
         android:textSize="19sp" />
+    <EditText
+        android:id="@+id/slide_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Введите слово"/>
+
+    <Button
+        android:id="@+id/slide_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/style_nightblue_button"
+        android:text="Отправить"
+        android:textColor="@color/colorWhite" />
+    <TextView
+        android:id="@+id/slide_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Пропустить"/>
 </LinearLayout>

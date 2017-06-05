@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity
         firebaseInit();
         if(isFirstRun()) {
             // Первый запуск. Запускаем окно приветствия.
-            Intent intent = new Intent(MainActivity.this, WelcomeActivity.class);
+            Intent intent = new Intent(MainActivity.this, Welcome.class);
             startActivity(intent);
         } else {
             // Не первый запуск. Проверяем статус авторизации.
@@ -82,8 +82,8 @@ public class MainActivity extends AppCompatActivity
             if(user != null) {
                 // Пользователь авторизован. Открываем основной интерфейс приложения.
                 updateUI();
-                TextView userinfo = (TextView) findViewById(R.id.userinfo);
-                userinfo.setText("Здравствуйте, " + user.getDisplayName() + "!");
+//                TextView userinfo = (TextView) findViewById(R.id.userinfo);
+//                userinfo.setText("Здравствуйте, " + user.getDisplayName() + "!");
             } else {
                 // Пользователь не авторизован. Открываем авотризацию.
                 // TODO: Создать окно авторизации
@@ -126,8 +126,8 @@ public class MainActivity extends AppCompatActivity
                 if (user != null) {
                     // TODO: что-то делаем, если пользователь авторизован
                     updateUI();
-                    TextView userinfo = (TextView) findViewById(R.id.userinfo);
-                    userinfo.setText("Здравствуйте, " + user.getDisplayName() + "!");
+//                    TextView userinfo = (TextView) findViewById(R.id.userinfo);
+//                    userinfo.setText("Здравствуйте, " + user.getDisplayName() + "!");
                 } else {
                     // TODO: что-то делаем, если пользователь не авторизован
                     Toast.makeText(self, "Авторизация не выполнена!", Toast.LENGTH_SHORT);
@@ -292,3 +292,4 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 }
+

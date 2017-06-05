@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Voicecurity.iml" filepath="$PROJECT_DIR$/Voicecurity.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/voicecurity-android.iml" filepath="$PROJECT_DIR$/voicecurity-android.iml" />
     </modules>
   </component>
 </project>

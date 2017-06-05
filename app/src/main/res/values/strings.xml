@@ -3,10 +3,8 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="google_maps_api_key">AIzaSyBhwhx8J0X6W7tnd3Cvh3b7r5KpHrSxSh0</string>
 
-    <string name="slide_welcome">Тест</string>
-    <string name="slide_1_welcome">Для Вас</string>
-    <string name="slide_2_welcome">Для семьи</string>
-
+    <string name="slide_welcome">От нападения</string>
+    <string name="slide_2_welcome">От шантажа</string>
 
     <string name="slide_wd">Описание дефолт</string>
 
